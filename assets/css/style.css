@@ -302,6 +302,7 @@ input[type="submit"]:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between ;
+    background-color: #000000c6;
     background-size: cover;
     background-attachment: fixed;
     scroll-behavior: smooth;

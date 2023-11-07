@@ -8,13 +8,6 @@
     border: none;
     text-transform: capitalize;
 }
-
-:root{
-    --primary: #000;
-    --secondary: #f1f1f1;
-    --tetiary: #bf800b;
-}
-
 :root{
     --light: #f1f1f1;
     --dark: #222;
@@ -92,9 +85,23 @@
     }
 
     .disply-nav{
-        display: block;
+        display: none;
         width: 200px;
         padding: 10px;
+        position: sticky;
+    }
+    .disply-nav li{
+        list-style: none;
+        padding: 10px;
+    }
+    .disply-nav li a{
+        color: var(--dark);
+        font-size: 1.5rem;
+        font-weight: bold;
+        border-bottom: 1px solid var(--dark);
+    }
+    .disply-nav li a:hover{
+        color: var(--secondary);
     }
 
     .header .icons:hover{
