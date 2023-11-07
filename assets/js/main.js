@@ -28,6 +28,5 @@
         let closeBtn = document.getElementById('close-bars');
 
         function menuToggle() {
-            
         }
 
