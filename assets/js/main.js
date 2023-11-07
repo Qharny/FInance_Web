@@ -1,12 +1,3 @@
-let menu = document.querySelector('#menu-btn');
-        let navbar = document.querySelector('.header .navbar');
-
-        // menu.onclick = () => {
-        //     menu.classList.toggle('fas-times');
-        //     navbar.classList.toggle('active');
-        // }
-
-
         window.onscroll = () => {
             menu.classList.remove('fa-times');
             navbar.classList.remove('active');
@@ -30,4 +21,13 @@ let menu = document.querySelector('#menu-btn');
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
             setTimeout(showSlides, 3000); // Change image every 3 seconds
+        };
+
+        // a function to create a drop down menu ater clicking on a menu icon.
+        let menuBtn = document.getElementById('menu-bars');
+        let closeBtn = document.getElementById('close-bars');
+
+        function menuToggle() {
+            
         }
+

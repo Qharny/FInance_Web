@@ -90,6 +90,9 @@
         margin: 30px;
         transition: all 0.3s ease;
     }
+    .icons #close-bars{
+        display: none;
+    }
     /* .display-nav {
         display: block;
         height: 200px;
@@ -99,13 +102,9 @@
     }
 
     /* About */
-    .about{
+    .about .row{
         display: flex;
         flex-direction: column;
-    }
-
-    .about .row{
-        display: inline;
     }
 
     .about h2{
@@ -116,13 +115,17 @@
         margin: 20px;
     }
     .about p{
-        margin: 20px;
+    width: 100%;
+    font-size: large;
     }
 
 
-    .service{
-        display: flex;
-        flex-direction: column;
+    .service .box{
+        display: inline;
+        width: auto;
+    }
+    .card{
+        margin: 20px;
     }
 
 
