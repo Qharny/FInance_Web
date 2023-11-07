@@ -100,22 +100,7 @@ span {
     color: var(--secondary);
 }
 
-.header .icons div,
-.header .icons a {
-    transition: 0.3s ease-in-out;
-    height: 4.5rem;
-    width: 4.5rem;
-    line-height: 4.5rem;
-    border-radius: .5rem;
-    background: #eee;
-    font-size: 1.7rem;
-    color: #222;
-    margin-left: .3rem;
-    text-align: center;
-    cursor: pointer;
-}
-
-.header #menu-btn {
+.header .icons , .display-nav{
     display: none;
 }
 .home{

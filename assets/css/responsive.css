@@ -1,8 +1,12 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    border: none;
+    text-transform: capitalize;
 }
 
 :root{
@@ -11,9 +15,119 @@
     --tetiary: #bf800b;
 }
 
-html, body{
-    overflow-x: hidden;
-    width: 100%;
-    height: 100%;
-    color: var(--primary);
+:root{
+    --light: #f1f1f1;
+    --dark: #222;
+    --primary: #714b05;
+    --secondary: #eba116;
+}
+
+/* Responsive */
+
+@media (max-width: 910px) {
+    html, body {
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        scroll-padding-top: 7rem;
+        background: var(--light);
+        background-size: cover;
+        background-attachment: fixed;
+        scroll-behavior: smooth;
+        width: 100%;
+        height: 100%;
+    }
+    section {
+        padding: 3rem 9%;
+    }
+
+    span {
+        color: var(--secondary);
+    }
+
+
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(-4rem) scale(0.4);
+        }
+    }
+
+    .header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem 9%;
+    }
+
+    .header .logo {
+        font-size: 2rem;
+        color: #222;
+        font-weight: bolder;
+    }
+
+    .header .logo i {
+        color: var(--primary);
+    }
+
+    .header .navbar a {
+        display: none;
+    }
+
+    .header .icons {
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+        position: fixed;
+        right: 0;
+        margin: 30px;
+        transition: all 0.3s ease;
+    }
+    /* .display-nav {
+        display: block;
+        height: 200px;
+    } */
+    .header .icons:hover{
+        color: var(--secondary);
+    }
+
+    /* About */
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about .row{
+        display: inline;
+    }
+
+    .about h2{
+        margin: 10px;
+    }
+
+    .about h3{
+        margin: 20px;
+    }
+    .about p{
+        margin: 20px;
+    }
+
+
+    .service{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+
+
 }
