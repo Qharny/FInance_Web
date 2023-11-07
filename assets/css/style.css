@@ -100,7 +100,10 @@ span {
     color: var(--secondary);
 }
 
-.header .icons , .display-nav{
+.header .icons{
+    display: none;
+}
+.disply-nav{
     display: none;
 }
 .home{
@@ -299,7 +302,6 @@ input[type="submit"]:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between ;
-    background: linear-gradient(to right, #0000007c, #0000007c), url(../imgs/facial.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     scroll-behavior: smooth;

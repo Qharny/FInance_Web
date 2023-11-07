@@ -15,18 +15,25 @@
 <body>
     <section id="header" class="header">
         <a href="#" class="logo"><i class="fas fa-female"></i>Company <span>Name</span></a>
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <a href="#home">home</a>
             <a href="#about">About Us</a>
             <a href="#service">Service</a>
             <a href="#contact">Contact</a>
         </nav>
         <div class="icons">
-            <i class="fas fa-bars" id="menu-bars" onclick="menuToggle()"></i>
-            <i class="fas fa-times" id="close-bars" onclick="closeToggle()"></i>
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <!-- <i class="fas fa-times" id="close-bars" ></i> -->
         </div>
-        <div class="disply-nav"></div>
     </section>
+    <div class="disply-nav">
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
     <main>
         <section class="home" id="home">
             <div class="slideshow-container">

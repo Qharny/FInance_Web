@@ -23,10 +23,19 @@
             setTimeout(showSlides, 3000); // Change image every 3 seconds
         };
 
-        // a function to create a drop down menu ater clicking on a menu icon.
-        let menuBtn = document.getElementById('menu-bars');
-        let closeBtn = document.getElementById('close-bars');
+        const menuBtn = document.getElementById('menu-bars');
+        const closeBtn = document.getElementById('close-bars');
+        // const navbar = document.getElementById('navbar'); // assuming 'navbar' is the id of your navigation bar
+
 
         function menuToggle() {
+            menuBtn.onclick = () => {
+                menuBtn.classList.toggle('fa-times');
+            };
+            closeBtn.onclick = () => {
+                menuBtn.classList.toggle('fa-times');
+            };
         }
+        menuToggle();
+
 
