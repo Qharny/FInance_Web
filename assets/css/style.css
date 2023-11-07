@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    text-transform: capitalize;
+}
+:root{
+    --light: #f1f1f1;
+    --dark: #222;
+    --primary: #714b05;
+    --secondary: #eba116;
+}
+
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    background: var(--light);
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+section {
+    padding: 3rem 9%;
+}
+
+span {
+    color: var(--secondary);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    color: #fff;
+    font-size: 1.7rem;
+    box-shadow: 0 0.5rem 1rem #0000001a;
+    cursor: pointer;
+}
+
+.btn:hover {
+    letter-spacing: .1rem;
+}
+
+.heading {
+    text-align: center;
+    color: #222;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+}
+
+.navbar:hover {
+    color: #000;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem) scale(0.4);
+    }
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+}
+
+.header .logo {
+    font-size: 2rem;
+    color: #222;
+    font-weight: bolder;
+}
+
+.header .logo i {
+    color: var(--primary);
+}
+
+.header .navbar a {
+    transition: 0.3s ease-in-out;
+    margin: 0 1.5rem;
+    font-size: 1.2rem;
+    color: #222;
+}
+
+.header .navbar a:hover {
+    color: var(--secondary);
+}
+
+.header .icons div,
+.header .icons a {
+    transition: 0.3s ease-in-out;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 1.7rem;
+    color: #222;
+    margin-left: .3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header #menu-btn {
+    display: none;
+}
+.home{
+    width: 100%;
+    padding: 0;
+}
+
+/* slider section */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    height: 500px;
+}
+
+.slides {
+position: relative;
+    display: none;
+    text-align: center;
+    height: 100%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Slideshow dots */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+/* @-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+} */
+
+/* @keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+} */
+.text-content{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: grid;
+    place-items: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.text-content h1{
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: Se;
+}
+
+/* about section */
+.about h2{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.about .row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between ;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+.about .row .img{
+    margin: 20px;
+    width: 20%;
+}
+.about .row .content{
+    width: 60%;
+    margin: 10px;
+}
+
+/* services section */
+.service h2{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.service .box{
+    display: grid;
+    grid-template:
+    "1 2 3"
+    "4 5 6";
+    gap: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem #0000001a;
+    cursor: pointer;
+}
+.card h3,
+.card p{
+    padding: 20px 30px;
+}
+.img{
+    width: 100%;
+    overflow: hidden;
+}
+.card img{
+    width: 100%;
+    height: 300px;
+    transition: 0.3s ease-in-out;
+}
+.card img:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+
+
+
+
+input{
+    margin: 10px;
+    height: 30px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+::placeholder{
+    font-size: 18px;
+}
+
+input[type="submit"]{
+    background: var(--primary);
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    height: auto;
+    width: 80px;
+}
+input[type="submit"]:hover{
+    background: var(--secondary);
+    width: initial;
+}
+
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    background: linear-gradient(to right, #0000007c, #0000007c), url(../imgs/facial.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+.info > .locate{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    color: #fff;
+}
+.info p {
+    padding: 5px;
+}
+.info .working-hours{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    color: #fff;
+}
+/* footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
