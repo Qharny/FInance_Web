@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 * {
-    font-family:'Poppins', Times, serif;
+    font-family: 'outif';
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -191,7 +192,6 @@ img{
 .text-content h1{
     font-size: 3rem;
     font-weight: 600;
-    font-family: Se;
 }
 
 /* about section */
@@ -318,6 +318,8 @@ input{
 ::placeholder{
     font-size: 18px;
     text-transform: none;
+    display: flex;
+    align-items: center;
 }
 
 input[type="submit"]{

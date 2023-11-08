@@ -53,5 +53,24 @@ document.body.addEventListener('click', function() {
     dropdown.style.display = 'none';
 });
 
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
 
+    var name = document.getElementsById('name')[0].value;
+    var email = document.getElementsById('email')[0].value;
+    var message = document.getElementsById('message')[0].value;
 
+    Email.send({
+        SecureToken: "Your-Secure-Token",
+        To: 'cannycc1020@gmail.com',
+        From: email,
+        Subject: "New message from " + name,
+        Body: message,
+    }).then(function(response) {
+        if (response == 'OK') {
+            alert('Your message has been sent. Thank you!');
+        } else {
+            alert('There was an error sending your message.');
+        }
+    });
+});

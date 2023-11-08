@@ -208,22 +208,22 @@
             <div class="content">
                 <div class="social">
                     <a href="#"><i class="fab fa-facebook-f"></i>facebook.com</a>
-                    <a href="#"><i class="fab fa-whatsapp"></i>+233(0) 23 456 7890</a>
+                    <a href="#"><i class="fab fa-whatsapp"></i>(123) 456-7890</a>
                     <a href="#"><i class="fab fa-instagram"></i>IG.com</a>
                     <a href="#"><i class="fab fa-twitter"></i>X.com</a>
                     <a href="#"><i class="fas fa-envelope"></i>name&commat;gmail.com</a>
 
                 </div>
-                <form action="maito:cannycc1020@gmail.com" method="post">
+                <form id="contact-form" method="post">
 
                     <label for="name">Name</label>
-                    <input type="text" name="name" placeholder="Enter Your Name" class="box">
+                    <input type="text" id="name" placeholder="Enter Your Name" >
                     <br>
                     <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="Enter Your Email" class="box">
+                    <input type="email" id="email" placeholder="Enter Your Email" >
                     <br>
                     <label for="number">Message</label>
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Enter Your Message" class="box"></textarea>
+                    <textarea name="message" id="message" cols="50" rows="5" placeholder="Enter Your Message" ></textarea>
                     <br>
                     <input type="submit" name="submit" value="Send" class="btn">
                 </form>
@@ -242,7 +242,7 @@
                 </p>
                 <p>
                     <i class="fas fa-envelope"></i>
-                    Email: info@companyname.com
+                    Email: infocompanyname.com
                 </p>
             </div>
             <div class="working-hours">
@@ -270,6 +270,8 @@
     </footer>
 
     <script src="./assets/js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
 </body>
 
 </html>
