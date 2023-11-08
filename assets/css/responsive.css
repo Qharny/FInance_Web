@@ -134,7 +134,15 @@
     .card{
         margin: 20px;
     }
+    .gallery .box{
+        display: inline;
+        width: auto;
+    }
 
+    .contact .content{
+        display: inline;
+        width: auto;
+    }
 
 
 }
