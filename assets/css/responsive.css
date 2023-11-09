@@ -20,7 +20,7 @@
 
 @media (max-width: 910px) {
     html, body {
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         scroll-behavior: smooth;
         scroll-padding-top: 7rem;
         background: var(--light);
