@@ -110,21 +110,12 @@
     }
 
     /* About */
-    .about .row{
+    .about{
         display: flex;
         flex-direction: column;
-    }
-
-    .about h2{
-        margin: 10px;
-    }
-
-    .about h3{
-        margin: 20px;
-    }
-    .about p{
-    width: 100%;
-    font-size: large;
+        flex-wrap: wrap;
+        width: 100%;
+        overflow-x: hidden;
     }
 
 
@@ -149,5 +140,4 @@
         display: flex;
         justify-content: start;
     }
-
 }
